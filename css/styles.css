@@ -1,0 +1,349 @@
+/* line 3, stdin */body{display:flex;min-height:100vh;flex-direction:column}/* line 9, stdin */main{flex:1 0 auto}
+
+body {
+  background: url("images/WildBillsBackground.png") no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-size: 1500px;*/
+  background-repeat: repeat;
+  /*background-attachment: scroll;
+  background-attachment: fixed;
+  background-attachment: local;
+
+  background-attachment: inherit;
+*/
+  background-position:center;
+}
+
+/*HOVER ANIMATION*/
+@-webkit-keyframes wiggle
+{
+    0% {-webkit-transform: rotateZ(2deg);}
+    50% {-webkit-transform: rotateZ(-2deg);}
+    100% {-webkit-transform: rotateZ(2deg);}
+}
+@-moz-keyframes wiggle
+{
+    0% {-moz-transform: rotateZ(2deg);}
+    50% {-moz-transform: rotateZ(-2deg);}
+    100% {-moz-transform: rotateZ(2deg);}
+}
+@-o-keyframes wiggle
+{
+    0% {-o-transform: rotateZ(2deg);}
+    50% {-o-transform: rotateZ(-2deg);}
+    100% {-o-transform: rotateZ(2deg);}
+}
+@keyframes wiggle
+{
+    0% {transform: rotateZ(2deg);}
+    50% {transform: rotateZ(-2deg);}
+    100% {transform: rotateZ(2deg);}
+}
+
+
+.hidden {
+  display: none;
+}
+
+#name_title_div {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#cover_title_first {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Droid Serif', serif;
+  color: #E33336;
+  text-shadow: 2px 2px 2px black;
+  display: inline-block;
+}
+
+#cover_title_second {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Great Vibes', cursive;
+  color: #32ADE9;
+  text-shadow: 1px 1px 2px grey, 0 0 .2em grey, 0 0 0.4em blue;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 75px;
+}
+
+#sft_dev {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Inconsolata';
+  color: #E33336;
+  text-shadow: 2px 2px 2px black;
+}
+
+#composer_div {
+  margin-top: 50px;
+}
+
+#composer {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Great Vibes', cursive;
+  color: #32ADE9;
+  text-shadow: 1px 1px 2px grey, 0 0 .2em grey, 0 0 0.4em blue;
+  /*text-shadow: 1px 1px 2px lightgrey;*/
+}
+
+#composer:hover {
+  background: radial-gradient(ellipse, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0.5) 40%, rgba(255, 0, 0, 0) 70%);
+}
+
+#sft_dev:hover {
+  background: radial-gradient(ellipse, rgba(20, 30, 81, .8) 0%, rgba(200, 200, 200, 0.5) 60%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+/*Software Dev*/
+
+
+/*colors to use:
+BLUE:
+light blue
+#5B90EC
+dark blue
+#141E51
+rgba(20, 30, 81, .7);
+173.63
+
+175.96
+
+159.44
+
+#AEB09F
+
+
+light blue
+#32ADE9
+white
+#68A0F5
+#04296F
+white
+#D8F3FE
+*/
+
+#About_Div, #Skills_Div {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.navbar-fixed {
+}
+
+#Top_Intro {
+  margin-top: 220px;
+  margin-bottom: 200px;
+  width: 100%;
+  height: 300px;
+}
+
+#About {
+  font-family: 'Inconsolata';
+  margin: 0 auto;
+  /*background-color: rgba(20, 30, 81, .8);*/
+  padding: 15px 0;
+  width: 100%;
+  /*box-shadow: inset  0  18px 18px -18px #D8F3FE,*/
+              /*inset  0 -18px 18px -18px #D8F3FE;*/
+  margin-top: 100px;
+  min-height: 400px;
+}
+
+@media (max-width: 839px) {
+  #About {
+    margin-top: 210px;
+  }
+}
+
+.aboutme_info {
+  margin: 0 auto;
+  margin-left: 15px;
+}
+
+.profile_pic {
+  float: left;
+  margin: 0 15px;
+  width: 200px;
+}
+
+.info_border {
+  /*box-shadow: 0 0 15px white;*/
+  border-radius: 5px;
+  box-shadow: 0 0 45px #141E51;
+  background: url("images/cBoard60.jpg");
+  text-align: center;
+  width: 80%;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 80px;
+  min-height: 390px;
+  padding-top: 10px;
+}
+
+.info_border_first {
+  margin-top: 30px;
+}
+
+.info_border_last {
+  margin-bottom: 0;
+}
+
+#front_ground2 {
+  margin-top: 400px;
+}
+
+.div_text {
+  display: inline;
+  color: black;
+  font-size: 20px;
+}
+
+.div_text_div {
+  text-align: justify;
+  margin: 0 40px;
+}
+
+.div_headings {
+  background: rgba(20, 30, 81, .9);
+  text-shadow: 1px 1px #D8F3FE;
+  padding: 5px 0;
+  border-radius: 4px;
+  box-shadow: inset 0 0 15px #D8F3FE;
+  /*border: solid 2px #141E51;*/
+  width: 250px;
+  text-align: center;
+  margin: 17px auto;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  box-shadow: 0 0 15px #141E51;
+}
+
+.Sft_intro {
+  font-family: 'Candal', sans-serif;
+  color: #D8F3FE;
+  text-shadow: 4px 4px 4px rgba(20, 30, 81, 1);
+  text-align: center;
+}
+
+.Sft_intro1 {
+  font-size: 120px;
+}
+
+.Sft_intro2 {
+  font-size: 65px;
+}
+
+#sills_img_div {
+  margin: 40px auto;
+}
+
+.skills_imgs {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #D8F3FE;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.skills_row {
+  padding: 0;
+  margin: 0;
+}
+
+.skill_tag {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.projects_imgs {
+  width: 40%;
+  margin: 20px auto;
+}
+
+#contact_info {
+  margin-top: 40px;
+}
+
+.contact_img {
+  margin: 0 20px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.contact_img:hover, .skills_imgs:hover {
+    -webkit-animation: wiggle 0.2s ease infinite;
+    -moz-animation: wiggle 0.2s ease infinite;
+    -o-animation: wiggle 0.2s ease infinite;
+    animation: wiggle 0.2s ease infinite;
+}
+
+.projects_imgs:hover {
+  box-shadow: 0 0 45px #141E51;
+}
+
+
+/*MUSICIAN*/
+/*colors to use:
+RED:
+light brown
+#F2B242
+black
+#050507
+light yellow
+#F3EBA9
+dark red!!!!
+#E33336
+#EE472B
+#BD6A44
+#ED312D
+#F3ECBB
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container{
+    padding:200px 20px 200px 20px;
+    text-align:center;
+    color:#FFF;
+    font-weight:bold;
+}
+.section-1{
+    background-image:url(http://static4.wikia.nocookie.net/__cb20130612023354/harrypotter/images/d/d1/Gradient-blue-background.jpg);
+    background-position:center;
+}
+.section-2{
+    background-image:url(http://th00.deviantart.net/fs49/PRE/f/2009/207/e/d/Orange_Desktop_Background_by_The_Dogfather.png);
+    background-position:center;
+}
+.section-3{
+    background-image:url(http://oaklandbaptist.org/media/Green-Background.jpg);
+    background-position:center;
+}
+
+*/
+
+
