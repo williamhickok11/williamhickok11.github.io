@@ -1,7 +1,7 @@
 /* line 3, stdin */body{display:flex;min-height:100vh;flex-direction:column}/* line 9, stdin */main{flex:1 0 auto}
 
 body {
-  background: url("images/WildBillsBackground.png") no-repeat center center fixed;
+  background: url("images/blueBG.jpg") no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
