@@ -2,48 +2,39 @@
 
 body {
   background: url("images/blueBG.jpg") no-repeat center center fixed;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*background-size: 1500px;*/
   background-repeat: repeat;
-  /*background-attachment: scroll;
-  background-attachment: fixed;
-  background-attachment: local;
-
-  background-attachment: inherit;
-*/
   background-position:center;
 }
 
 /*HOVER ANIMATION*/
 @-webkit-keyframes wiggle
 {
-    0% {-webkit-transform: rotateZ(2deg);}
-    50% {-webkit-transform: rotateZ(-2deg);}
-    100% {-webkit-transform: rotateZ(2deg);}
+  0% {-webkit-transform: rotateZ(2deg);}
+  50% {-webkit-transform: rotateZ(-2deg);}
+  100% {-webkit-transform: rotateZ(2deg);}
 }
 @-moz-keyframes wiggle
 {
-    0% {-moz-transform: rotateZ(2deg);}
-    50% {-moz-transform: rotateZ(-2deg);}
-    100% {-moz-transform: rotateZ(2deg);}
+  0% {-moz-transform: rotateZ(2deg);}
+  50% {-moz-transform: rotateZ(-2deg);}
+  100% {-moz-transform: rotateZ(2deg);}
 }
 @-o-keyframes wiggle
 {
-    0% {-o-transform: rotateZ(2deg);}
-    50% {-o-transform: rotateZ(-2deg);}
-    100% {-o-transform: rotateZ(2deg);}
+  0% {-o-transform: rotateZ(2deg);}
+  50% {-o-transform: rotateZ(-2deg);}
+  100% {-o-transform: rotateZ(2deg);}
 }
 @keyframes wiggle
 {
-    0% {transform: rotateZ(2deg);}
-    50% {transform: rotateZ(-2deg);}
-    100% {transform: rotateZ(2deg);}
+  0% {transform: rotateZ(2deg);}
+  50% {transform: rotateZ(-2deg);}
+  100% {transform: rotateZ(2deg);}
 }
-
 
 .hidden {
   display: none;
@@ -177,12 +168,11 @@ white
 }
 
 .info_border {
-  /*box-shadow: 0 0 15px white;*/
-  border-radius: 5px;
   box-shadow: 0 0 45px #141E51;
-  background: url("images/cBoard60.jpg");
+  background: rgba(216, 243, 254, 0.7);
+  /*background: #d8f3fe;*/
   text-align: center;
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin: 0px auto;
   margin-bottom: 80px;
@@ -214,15 +204,20 @@ white
 }
 
 .div_headings {
-  background: rgba(20, 30, 81, .9);
-  text-shadow: 1px 1px #D8F3FE;
-  padding: 5px 0;
-  border-radius: 4px;
-  box-shadow: inset 0 0 15px #D8F3FE;
-  /*border: solid 2px #141E51;*/
-  width: 250px;
+  /*background: rgba(20, 30, 81, .9);*/
+  font-family: 'Candal', sans-serif;
+  color: #D8F3FE;
+  text-shadow: 4px 4px 4px rgba(20, 30, 81, 1);
   text-align: center;
-  margin: 17px auto;
+  padding: 5px 0;
+  text-align: center;
+
+
+  /*color: red
+  text-shadow: 1px 1px blue;
+  border-radius: 4px;
+  width: 250px;
+  margin: 17px auto;*/
 }
 
 .profile_pic {
@@ -253,7 +248,7 @@ white
   width: 100px;
   height: 100px;
   border-radius: 15px;
-  box-shadow: 0 0 15px #D8F3FE;
+  box-shadow: 0 0 15px #253161;
   margin: 0 auto;
   padding: 0;
 }
@@ -320,30 +315,5 @@ dark red!!!!
 
 
 
-
-
-
-
-/*
-.container{
-    padding:200px 20px 200px 20px;
-    text-align:center;
-    color:#FFF;
-    font-weight:bold;
-}
-.section-1{
-    background-image:url(http://static4.wikia.nocookie.net/__cb20130612023354/harrypotter/images/d/d1/Gradient-blue-background.jpg);
-    background-position:center;
-}
-.section-2{
-    background-image:url(http://th00.deviantart.net/fs49/PRE/f/2009/207/e/d/Orange_Desktop_Background_by_The_Dogfather.png);
-    background-position:center;
-}
-.section-3{
-    background-image:url(http://oaklandbaptist.org/media/Green-Background.jpg);
-    background-position:center;
-}
-
-*/
 
 
