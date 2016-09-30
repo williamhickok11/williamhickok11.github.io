@@ -31,10 +31,12 @@ $('body').each(function() {
 
  $(window).bind('scroll', update);
 
+// var isHovered = $('#elem').is(":hover");
+var currentHoverEle = $(this).parent().siblings()
 
-//var to prevent tiny glitch
-var isGrowing = false;
-var isShrinking = false;
+function growingChecker(animation_identifer){
+  var isGrowing = true;
+}
 
 // Animate Skills tag
 $(".skills_imgs").hover(
@@ -44,15 +46,19 @@ $(".skills_imgs").hover(
     var fontIncreaser = 14;
     var fontAnimation = setInterval(
       function() {
+        // Check if the person has un-hovered before the animation is complete
+        if (currentHoverEle.css("font-size") != fontIncreaser + "px") {
+          clearInterval(fontAnimation);
+        };
         if (currentHoverEle.css("font-size") <= "20px") {
           // Increase the size of the font
           fontIncreaser += .2;
+          fontIncreaser=Math.round(fontIncreaser*100)/100
           currentHoverEle.css("font-size", fontIncreaser)
         } else {
-          currentHoverEle.css("font-size", "20px")
           clearInterval(fontAnimation);
         }
-      },6
+      },5
     );
   },
   // after leaving hover
@@ -69,17 +75,9 @@ $(".skills_imgs").hover(
           currentHoverEle.css("font-size", "14px")
           clearInterval(fontAnimation);
         }
-      },4
+      },5
     );
   }
 )
 
 
-// function sleep(miliseconds) {
-//   var currentTime = new Date().getTime();
-//   while (isGrowing == false) {
-//     console.log("go");
-//   }
-// }
-
-// sleep(2000);
