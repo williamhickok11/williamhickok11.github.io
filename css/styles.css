@@ -214,6 +214,8 @@ white
   padding: 5px 0;
   text-align: center;
   font-size: 50px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(20, 30, 81, .3);
 
 
   /*color: red
@@ -226,6 +228,7 @@ white
 .profile_pic {
   border-radius: 50%;
   box-shadow: 0 0 15px #141E51;
+  margin-bottom: 15px
 }
 
 .Sft_intro {
@@ -292,6 +295,9 @@ white
   box-shadow: 0 0 45px #141E51;
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+}
 
 /*MUSICIAN*/
 /*colors to use:
