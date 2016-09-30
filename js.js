@@ -32,6 +32,10 @@ $('body').each(function() {
  $(window).bind('scroll', update);
 
 
+//var to prevent tiny glitch
+var isGrowing = false;
+var isShrinking = false;
+
 // Animate Skills tag
 $(".skills_imgs").hover(
   // on hover
@@ -45,6 +49,7 @@ $(".skills_imgs").hover(
           fontIncreaser += .2;
           currentHoverEle.css("font-size", fontIncreaser)
         } else {
+          currentHoverEle.css("font-size", "20px")
           clearInterval(fontAnimation);
         }
       },6
@@ -61,16 +66,20 @@ $(".skills_imgs").hover(
           fontIncreaser -= .2;
           currentHoverEle.css("font-size", fontIncreaser)
         } else {
+          currentHoverEle.css("font-size", "14px")
           clearInterval(fontAnimation);
         }
-      },6
+      },4
     );
   }
 )
 
 
+// function sleep(miliseconds) {
+//   var currentTime = new Date().getTime();
+//   while (isGrowing == false) {
+//     console.log("go");
+//   }
+// }
 
-
-
-
-
+// sleep(2000);
