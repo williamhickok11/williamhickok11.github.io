@@ -259,14 +259,18 @@ white
   padding: 0;
 }
 
-.skills_row {
-  padding: 0;
-  margin: 0;
+.skills_div {
+  height: 146px;
 }
 
 .skill_tag {
   margin: 0 auto;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
+}
+
+.skills_row {
+  padding: 0;
+  margin: 0;
 }
 
 .projects_imgs {
@@ -296,6 +300,7 @@ white
 }
 
 p {
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
 

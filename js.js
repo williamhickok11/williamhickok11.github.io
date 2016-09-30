@@ -32,21 +32,41 @@ $('body').each(function() {
  $(window).bind('scroll', update);
 
 
-
-// $(document).ready(function(){
-//     $(".skills_imgs").hover(function(){
-//       $(this).parent.lastchild
-//       //Fade in
-//         $('.skills_imgs').stop().animate({'margin-top': '200px'}, 1500);
-//     }, function(){
-//       //Fade out
-//         $('.skill_tag').stop().animate({'margin-top': '50px'}, 1500);
-//     });
-// });
-
-
-
-
+// Animate Skills tag
+$(".skills_imgs").hover(
+  // on hover
+  function(){
+    var currentHoverEle = $(this).parent().siblings()
+    var fontIncreaser = 14;
+    var fontAnimation = setInterval(
+      function() {
+        if (currentHoverEle.css("font-size") <= "20px") {
+          // Increase the size of the font
+          fontIncreaser += .2;
+          currentHoverEle.css("font-size", fontIncreaser)
+        } else {
+          clearInterval(fontAnimation);
+        }
+      },6
+    );
+  },
+  // after leaving hover
+  function(){
+    var currentHoverEle = $(this).parent().siblings()
+    var fontIncreaser = 20;
+    var fontAnimation = setInterval(
+      function() {
+        if (currentHoverEle.css("font-size") >= "14px") {
+          // Increase the size of the font
+          fontIncreaser -= .2;
+          currentHoverEle.css("font-size", fontIncreaser)
+        } else {
+          clearInterval(fontAnimation);
+        }
+      },6
+    );
+  }
+)
 
 
 
