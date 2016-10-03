@@ -47,9 +47,9 @@ $(".skills_imgs").hover(
     var fontAnimation = setInterval(
       function() {
         // Check if the person has un-hovered before the animation is complete
-        if (currentHoverEle.css("font-size") != fontIncreaser + "px") {
-          clearInterval(fontAnimation);
-        };
+        // if (currentHoverEle.css("font-size") != fontIncreaser + "px") {
+        //   clearInterval(fontAnimation);
+        // };
         if (currentHoverEle.css("font-size") <= "20px") {
           // Increase the size of the font
           fontIncreaser += .2;
@@ -70,9 +70,10 @@ $(".skills_imgs").hover(
         if (currentHoverEle.css("font-size") >= "14px") {
           // Increase the size of the font
           fontIncreaser -= .2;
+          fontIncreaser=Math.round(fontIncreaser*100)/100
           currentHoverEle.css("font-size", fontIncreaser)
         } else {
-          currentHoverEle.css("font-size", "14px")
+          // currentHoverEle.css("font-size", "14px")
           clearInterval(fontAnimation);
         }
       },5
