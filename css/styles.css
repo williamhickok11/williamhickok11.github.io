@@ -327,10 +327,17 @@ white
 }
 
 p {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(20, 30, 81, .3);
+  color: #222222;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+  text-shadow: 3px 3px 3px #5179B2;
 }
 .div_text_div p {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(20, 30, 81, .3);
+  text-shadow: 3px 3px 3px #5179B2;
   font-size: 17px;
 }
 
