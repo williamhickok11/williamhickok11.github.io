@@ -20,8 +20,15 @@ $(".brand-logo").on("click",function(){
 var velocity = .5;
 
 function update(){
-var pos = $(window).scrollTop();
-$('body').each(function() {
+  // update project image size
+  var flexWidth = $(".projects_imgs").width();
+  for (var i = 0; i < $(".projects_imgs").length; i++) {
+    $(".projects_imgs").css("height", flexWidth * .69);
+  };
+
+  // parallax scrolling
+  var pos = $(window).scrollTop();
+  $('body').each(function() {
       var $element = $(this);
       // subtract some from the height b/c of the padding
       var height = $element.height();

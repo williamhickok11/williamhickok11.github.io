@@ -168,15 +168,11 @@ white
 }
 
 .info_border {
-  /*box-shadow: 0 0 45px #141E51;*/
-  /*background: rgba(216, 243, 254, 0.7);*/
-  /*background: #d8f3fe;*/
-  /*background: white;*/
   text-align: center;
   width: 100%;
   text-align: center;
   margin: 0px auto;
-  /*margin-bottom: 80px;*/
+  margin-bottom: 60px;
   padding-top: 0;
 }
 
@@ -213,10 +209,10 @@ white
   text-align: center;
   padding: 5px 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 75px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(20, 30, 81, .3);
-  margin-top: 0;
+  margin-top: 50px;
 
   /*color: red
   text-shadow: 1px 1px blue;
@@ -278,6 +274,8 @@ white
   width: 50%;
   padding-right: 0;
   padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   margin: 0;
 }
 .img_holder2 {
@@ -285,6 +283,16 @@ white
   width: 50%;
   padding-right: 0;
   padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+.href {
+  height: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   margin: 0;
 }
 
@@ -321,6 +329,9 @@ white
 p {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+}
+.div_text_div p {
+  font-size: 17px;
 }
 
 /*MUSICIAN*/
