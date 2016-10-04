@@ -31,7 +31,6 @@ $('body').each(function() {
 
  $(window).bind('scroll', update);
 
-// var isHovered = $('#elem').is(":hover");
 var currentHoverEle = $(this).parent().siblings()
 
 function growingChecker(animation_identifer){
@@ -47,9 +46,9 @@ $(".skills_imgs").hover(
     var fontAnimation = setInterval(
       function() {
         // Check if the person has un-hovered before the animation is complete
-        // if (currentHoverEle.css("font-size") != fontIncreaser + "px") {
-        //   clearInterval(fontAnimation);
-        // };
+        if (currentHoverEle.css("font-size") != fontIncreaser + "px") {
+          clearInterval(fontAnimation);
+        };
         if (currentHoverEle.css("font-size") <= "20px") {
           // Increase the size of the font
           fontIncreaser += .2;
@@ -73,7 +72,7 @@ $(".skills_imgs").hover(
           fontIncreaser=Math.round(fontIncreaser*100)/100
           currentHoverEle.css("font-size", fontIncreaser)
         } else {
-          // currentHoverEle.css("font-size", "14px")
+          currentHoverEle.css("font-size", "14px")
           clearInterval(fontAnimation);
         }
       },5
