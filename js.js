@@ -24,6 +24,8 @@ function update(){
   var flexWidth = $(".projects_imgs").width();
   for (var i = 0; i < $(".projects_imgs").length; i++) {
     $(".projects_imgs").css("height", flexWidth * .69);
+    $(".blue_overlay").css("height", flexWidth * .69);
+    $(".blue_overlay").css("width", flexWidth);
   };
 
   // parallax scrolling
@@ -86,5 +88,41 @@ $(".skills_imgs").hover(
     );
   }
 )
+
+// Hover IMG Overlay
+$('.wrap').mouseover(function () {
+  console.log("event.currenttarget", event.currentTarget);
+  var currentEle = event.currentTarget.childNodes[3];
+  var overlayIncreaser = 0
+  $(currentEle).show()
+
+
+// background-color: rgba(121, 171, 262, 0);
+
+  var showOverlay = setInterval(
+    function() {
+      console.log("currentEle", $(currentEle).css("background-color"));
+      if (overlayIncreaser <= .7) {
+        // Increase the visibility of the overlay
+        overlayIncreaser += .05;
+        overlayIncreaser=Math.round(overlayIncreaser*100)/100
+        $(currentEle).css("background-color", "rgba(121, 171, 262, " + overlayIncreaser + ")")
+      } else {
+        clearInterval(showOverlay);
+      }
+    },5
+  );
+
+
+
+  // $(currentEle).css("opacity", ".1")
+}).mouseout(function () {
+  var currentEle = event.currentTarget.childNodes[3];
+  $(currentEle).css("background-color", "rgba(121, 171, 262, 0)")
+  $(currentEle).hide()
+});
+
+
+
 
 

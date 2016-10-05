@@ -221,6 +221,12 @@ white
   margin: 17px auto;*/
 }
 
+.skills_headings {
+  clear: left;
+  clear: right;
+  padding-top: 80px;
+}
+
 .profile_pic {
   border-radius: 50%;
   box-shadow: 0 0 15px #141E51;
@@ -269,6 +275,9 @@ white
   margin: 0;
 }
 
+.wrap {
+  position: relative;
+}
 .img_holder1 {
   float: left;
   width: 50%;
@@ -288,21 +297,42 @@ white
   margin: 0;
 }
 .href {
-  height: 0;
   padding-right: 0;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
   margin: 0;
 }
+.blue_overlay {
+  background-color: rgba(121, 171, 262, 0);
+  z-index: 1;
+  /*opacity: 0;*/
+  position: absolute;
+  top: 0;
+  display:none;
+}
 
 .projects_imgs {
-  margin-left: 0;
+  /*padding-top: -20px;*/
+  /*margin-left: 0;
   margin-right: 0;
   padding-top: 0;
-  padding-right: 0;
+  padding-right: 0;*/
   width: 100%;
+  z-index: 2;
   /*margin: 20px auto;*/
+}
+
+.projects_div h2 {
+  font-family: 'Candal', sans-serif;
+  color: #D8F3FE;
+  text-shadow: 4px 4px 4px rgba(20, 30, 81, 1);
+  text-align: center;
+  margin-top: 60px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
+  font-size: 8em;
 }
 
 #contact_info {
@@ -322,10 +352,6 @@ white
     animation: wiggle 0.2s ease infinite;
 }
 
-.projects_imgs:hover {
-  box-shadow: 0 0 45px #141E51;
-}
-
 p {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(20, 30, 81, .3);
@@ -337,7 +363,7 @@ p {
 .div_text_div p {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(20, 30, 81, .3);
-  text-shadow: 3px 3px 3px #5179B2;
+  text-shadow: 2px 2px 3px #5179B2;
   font-size: 17px;
 }
 
