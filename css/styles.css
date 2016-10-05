@@ -328,7 +328,8 @@ white
   color: #D8F3FE;
   text-shadow: 4px 4px 4px rgba(20, 30, 81, 1);
   text-align: center;
-  margin-top: 60px;
+  padding-top: 60px;
+  margin-top: 0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: black;
